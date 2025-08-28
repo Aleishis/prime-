@@ -13,6 +13,8 @@ public class Palindrome {
     
     public static boolean isPalindrome (String value){
         
+        
+        
         value = value.replaceAll("\\s", "");
         char[] letras = value.toCharArray();
         

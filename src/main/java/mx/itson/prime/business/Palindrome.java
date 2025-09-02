@@ -13,11 +13,8 @@ public class Palindrome {
     
     public static boolean isPalindrome (String value){
         
-        
-        
-        value = value.replaceAll("\\s", "");
+        value = value.replaceAll("\\s", "").toLowerCase();
         char[] letras = value.toCharArray();
-        
         
         int counter = letras.length;
         for (char letra : letras){
@@ -26,11 +23,8 @@ public class Palindrome {
                 return false;
             }
             counter--;
-            if (counter < 0){
-                return true;
-            }
+
         }
-        
         return true;
     }
 }
